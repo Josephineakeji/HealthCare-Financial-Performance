@@ -1,6 +1,6 @@
 # Healthcare Financial Performance Dashboard 
 
-<img width="1536" height="355" alt="ChatGPT Image Feb 15, 2026, 07_31_41 PM" src="https://github.com/user-attachments/assets/ba978c33-5968-4466-86d4-f0b82b235849" />
+<img width="1536" height="355" alt="cover_photo" src="https://github.com/user-attachments/assets/8ce50bff-4f26-4049-88c9-0e4a80174178" />
 
 --- 
 
