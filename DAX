@@ -1,0 +1,78 @@
+**DateTable DAX**
+
+DateTable = 
+ADDCOLUMNS(
+    CALENDARAUTO(), 
+    "Year", YEAR([Date]),
+    "Month", FORMAT([Date], "mmm"),
+    "Monthnum", MONTH([Date]),
+    "Weekday", FORMAT([Date], "ddd"),
+    "Weeknum", WEEKDAY([Date]), 
+    "Quater", "Q-" & FORMAT([Date], "Q"),
+    "Weektype", IF(WEEKDAY([Date]) = 1 || WEEKDAY([Date]) = 7,
+    "Weekend", "Weekday")
+
+)
+
+**Basic Measures for KPI**
+
+Out-of-Pocket = [Total Billing Amount] - [Total Insurance Coverage]
+
+Total Billing Amount = 
+    [Total Medication Cost] +
+    [Total Room Charges] +
+    [Total Treatment Cost]
+
+    Total Insurance Coverage = SUM(visits[Insurance Coverage])
+
+    Total Medication Cost = SUM(visits[Medication Cost])
+
+    Total Patients = DISTINCTCOUNT(visits[Patient ID])
+
+    Total Room Charges = SUM(visits[Room Charges])
+
+    Total Treatment Cost = SUM(visits[Treatment Cost])
+
+**Average Measures for KPI**
+
+    Average Billing Amount Per Visit = 
+    DIVIDE(
+        [Total Billing Amount],
+        [Total Patients]
+    )
+
+Average Insurance Coverage = AVERAGE(visits[Insurance Coverage])
+
+Average Medication Cost = AVERAGE(visits[Medication Cost])
+
+Average Out-of-Pocket = 
+    DIVIDE(
+        [Out-of-Pocket],
+        [Total Patients]
+    )
+
+Average Room Charges = AVERAGE(visits[Room Charges])
+
+Average Treatment Cost = AVERAGE(visits[Treatment Cost])
+
+
+
+% Department = 
+DIVIDE(
+    [Total Billing Amount],
+CALCULATE(
+        [Total Billing Amount],
+        ALL(departments[Department])
+)
+)
+
+% Procedure = 
+DIVIDE(
+    [Total Billing Amount],
+CALCULATE(
+        [Total Billing Amount],
+        ALL(procedures[Procedure])
+)
+)
+
+Active Department = SELECTEDVALUE(departments[Department])
