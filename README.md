@@ -1,6 +1,6 @@
 # Healthcare Financial Performance Dashboard 
 
-<img width="1344" height="700" alt="cover photo" src="https://github.com/user-attachments/assets/5cb9fe28-1f12-4c87-9c0a-e46211da0b45" />
+<img width="1344" height="700" alt="cover photo" src="https://github.com/user-attachments/assets/621baff2-37d0-4fe5-88e1-7cb898418cb2" />
 
 --- 
 
