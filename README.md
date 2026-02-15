@@ -56,37 +56,25 @@ Healthcare dataset contain the following tables:
 
 Healthcare visit and reference tables were imported into Power BI and prepared for analysis. Key date fields were standardized, numeric cost fields were validated, and data quality checks were performed to ensure accurate downstream calculations.
 
----
-
 **Data Modeling**
 
 A structured analytical model was developed using a fact-and-dimension approach. A dedicated calendar table was created to enable time intelligence and consistent date slicing. Relationships were established across clinical, financial, provider, and geographic tables. A separate measures table was introduced to centralize KPIs and improve model organization.
-
----
 
 **Feature Engineering**
 
 Additional calculated fields were introduced to deepen the analysis, including stay-duration indicators and derived cost elements. These enhancements improved billing accuracy and strengthened operational insight generation.
 
----
-
 **KPI & Measure Development**
 
 Primary financial metrics were developed to monitor overall and component-level costs, insurance contributions, and patient out-of-pocket responsibility. Complementary KPIs were added to show both aggregate values and per-visit averages, supporting benchmarking and trend analysis.
-
----
 
 **Visualization & Analytics Layer**
 
 Interactive visuals were designed to analyze billing across procedures, departments, diagnoses, service types, geography, race and time. Percentage-of-total metrics were incorporated to highlight contribution shares and relative performance across categories.
 
----
-
 **Interaction & User Experience Design**
 
 The dashboard interface was enhanced with custom layout elements and a structured visual theme. Interactive controls were added to support dynamic filtering and parameter-driven geographic views. A toggleable filter panel was implemented to keep the report clean while preserving advanced exploration capability.
-
----
 
 **Key KPI Outputs**
 
