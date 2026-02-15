@@ -168,10 +168,34 @@ The dashboard delivers a decision-focused analytical view that helps guide cost 
 
 ---
 
-## End Result
+## Recommendations
+
+- **Focus on High-Revenue Departments**: Prioritize cost control and operational efficiency in Cardiology, Orthopedics, and General Surgery, as they contribute the largest share of total billing.
+
+- **Optimize Diagnostic Imaging Use**: Review utilization patterns for high-billing procedures such as X-Ray and CT scans to ensure appropriate ordering and reduce unnecessary repeat tests.
+
+- **Strengthen Acute Care Planning**: Improve emergency and inpatient resource readiness for high-acuity diagnoses like asthma and fracture that show heavier emergency and inpatient cost weight.
+
+- **Enhance Insurance Coverage Analysis**: Monitor insurance vs out-of-pocket cost splits to identify patient burden risks and support better coverage planning.
+
+- **Track Outpatient Efficiency**: Since most diagnoses are managed through outpatient services, invest in outpatient workflow optimization to maintain throughput and cost efficiency.
+
+---
+
+## Conclusion
 
 An interactive, executive-ready healthcare financial analytics dashboard that translates raw visit data into actionable operational and financial intelligence.
 A fully interactive, executive-ready healthcare financial dashboard that combines strong data modeling, DAX analytics, and UI design to support operational and financial decision-making.
+
+---
+
+## Future Considerations
+
+* Outcome + Cost Integration: Combine clinical outcome metrics with financial data to evaluate value of care, not just cost of care.
+
+* Real-Time Data Refresh: Integrate automated or near real-time data feeds to support continuous performance monitoring.
+
+* Patient Segment Deep Dive: Expand analysis by age group, risk category, and comorbidity to better understand high-cost patient segments.
 
 ---
 
